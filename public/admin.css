@@ -1,0 +1,124 @@
+main p{
+    text-align: center;
+    text-shadow: 1px solid rgb(85, 19, 19);
+}
+.centr{
+    text-align: center;
+}
+.form{
+    background-color:white;
+    width: 40%;
+    margin: 0.06rem auto;
+    box-shadow: 1px 2px 8px 2px rgb(231, 221, 221);
+    border-radius: 0.3rem;
+    padding: 0.3rem 0 0.6rem 0;
+}
+section .message{
+    text-align: center;
+    color: rgb(167, 53, 53);
+    background-color: rgb(216, 150, 150);
+    border-radius: 0.35rem;
+    padding: 0.2rem 0.2rem;
+    width: 60%;
+    position: relative;
+    top: 0.3rem;
+    margin: 0.06rem auto;
+   }
+.form ul{
+    list-style: none;
+}
+.form label{
+    display: block;
+   margin: 0.18rem 0 0.18rem -0.9rem;
+}
+.form input{
+    width: 96%;
+    margin: 0 0 0.4rem -0.9rem;
+    padding: 0.2rem 0;
+    outline: none;
+    border-radius: 0.3rem;
+    border: 1px solid gray;
+}
+.form textarea{
+    width: 95.6%;
+    resize: vertical;
+    margin: 0 0 -0.5rem -0.9rem;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 0.3rem;
+}
+.form button{
+    background-color: rgb(78, 67, 235);
+    border-radius: 0.3rem;
+    color: white;
+    text-align: center;
+    padding: 0.5rem 1.4rem;
+    border: none;
+    cursor: pointer;
+    margin: 0 0 0 1.4rem;
+}
+.btn-centr{
+    text-align: center;
+}
+.form button:hover{
+   color: black;
+   background-color: white;
+    border: 1px solid rgb(83, 27, 187);
+}
+.post-item h1{
+    text-align: center;
+}
+.para{
+    text-align: center;
+}
+.bbtn{
+    text-align: center;
+}
+.btn{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(70, 70, 228);
+    border-radius: 0.3rem;
+    padding: 0.3rem 0.7rem;
+}
+.plists{
+    list-style: none;
+}
+.post-item article{
+    background-color: white;
+    border-radius: 0.4rem;
+    width: 37%;
+    margin: 0.12rem auto;
+    box-shadow: 1px 2px 8px 2px rgb(231, 221, 221);
+}
+.post-item article h2{
+    text-align: center;
+
+}
+.post-item article p{
+    text-align: center;
+    margin-top: -0.83rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.btnl{
+    text-align: center;
+    display: flex;
+    padding-bottom: 0.7rem;
+    margin: 0.06rem 0.24rem 0.28rem 8rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.btnl button{
+    background-color: white;
+outline: none;
+color: rgb(70, 70, 228);
+padding-right: 1.8rem;
+border: none;
+}
+.link1{
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding: 0.3rem 0.7rem;
+    color: white;
+    background-color: rgb(70, 70, 228);
+    border-radius: 0.3rem;
+}

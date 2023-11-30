@@ -1,0 +1,27 @@
+    <div class="centr">
+        <h1>Adminstrate blog posts</h1>
+    <h1>Add a new post</h1>
+    </div>
+    <form action="<%= submitUrl %>" class="form" method="POST">
+        <section>
+            <% if (hasError) { %>
+                <p class="message"><%= errorMessage %></p>
+               <% } %>
+            <ul>
+                <li>
+                    <label for="user-title">Title</label>
+                    <input type="text" name="title" id="user-title" value="<%= title %>" >
+                </li>
+                <li>
+                    <label for="user-content">Post content</label>
+                    <textarea name="content" id="user-content" required minlength="10" maxlength="200"><%= content %></textarea>
+                </li>
+            </ul>
+            <div class="btn-centr">
+                <button type="submit">save</button>
+            </div>
+        </section>
+    </form>
+</main>
+</body>
+</html>

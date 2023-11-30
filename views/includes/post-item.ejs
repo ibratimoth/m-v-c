@@ -1,0 +1,9 @@
+<article>
+    <h2><%= post.title %></h2>
+    <div class="btnl">
+        <div><form action="/posts/<%= post._id %>/delete" method="post">
+            <button id="dlt-btn">Delete Post</button>
+        </form></div>
+        <div><a class="link1" href="/posts/<%= post._id %>/edit">Edit Post</a></div>
+    </div>
+</article>

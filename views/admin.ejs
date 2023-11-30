@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Authentication</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<link rel="stylesheet" type="text/css" href="/admin.css">
+    <link rel="stylesheet" type="text/css" href="/shared.css">
+</head>
+<body>
+    <%- include('includes/header')%>
+    <main>
+        <section>
+            <p>Welcome to the user dashboard</p>
+            <%- include('includes/post-form',{
+                submitUrl:'/posts',
+                hasError:inputData.hasError,
+                errorMessage:inputData.message,
+                title:inputData.title,
+                content:inputData.content
+            }) %>
+        </section>
+        <section class="post-item">
+            <h1>All posts</h1>
+            <% if (!posts || posts.length===0) {%>
+                <p class="para">No posts found- maybe start creating some?</p>
+                <div class="bbtn">
+                <a class="btn" href="/new-post">Create a new post</a>
+                </div>
+                <%} else{%>
+                    <ol class="plists">
+                        <% for(const post of posts) {%>
+                        <li>
+                            <%- include('includes/post-item',{post:post}) %>
+                        </li>
+                        <% } %>
+                    </ol>
+                    <% } %>
+        </section>
+       
+    </main>
+</body>
+</html>
